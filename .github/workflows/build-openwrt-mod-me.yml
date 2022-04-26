@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt Mod Version
+name: Build OpenWrt Mod Me Version
 
 on:
   repository_dispatch:
