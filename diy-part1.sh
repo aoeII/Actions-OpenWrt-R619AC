@@ -16,8 +16,14 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 cd package
-git clone https://github.com/liuran001/openwrt-packages
-git clone https://github.com/destan19/OpenAppFilter.git
-git clone https://github.com/zzsj0928/luci-app-serverchand
-git clone https://github.com/siropboy/luci-theme-btmod 
+# git clone https://github.com/liuran001/openwrt-packages
+# git clone https://github.com/destan19/OpenAppFilter.git
+# git clone https://github.com/zzsj0928/luci-app-serverchand
+# git clone https://github.com/siropboy/luci-theme-btmod 
 
+# Add a feed source
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+# echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git oaf https://github.com/destan19/OpenAppFilter' >>feeds.conf.default
+# echo 'src-git opentopd  https://github.com/sirpdboy/sirpdboy-package' >>feeds.conf.default
+git clone https://github.com/siropboy/sirpdboy-package package/sirpdboy
